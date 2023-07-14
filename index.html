@@ -136,7 +136,7 @@
   <div class="hero-body">
     <div class="container">
         <div class="item item-bird0" align="center">
-          <img src="static/images/teaser.png" width="75%" alt="overview_image">
+          <img src="static/images/teaser.jpg" width="75%" alt="overview_image">
           <div class="content has-text-justified">
             <p>   <b>(Left)</b> We introduce the task of novel view synthesis for LiDAR sensors. Given multiple LiDAR viewpoints of an object, novel LiDAR view synthesis aims to render a point cloud of the object from an arbitrary new viewpoint.
               <b>(Right, Top)</b>  The mostly-closed related approaches to generating new LiDAR point clouds are some LiDAR simulators, which suffer from limited scalability and  applicability, and fails to produce realistic LiDAR patterns.
@@ -168,7 +168,7 @@
           </p>
 <!--        </div>-->
 <!--        <div align="center" style="margin-top:80px;">-->
-          <img style="height: auto; width: 100%; object-fit: contain" src="static/images/motivation3.png" alt="overview_image">
+          <img style="height: auto; width: 100%; object-fit: contain" src="static/images/motivation3.jpg" alt="overview_image">
 <!--        </div>-->
 <!--        <div class="content has-text-justified">-->
         <p>
@@ -190,12 +190,12 @@
         <h2 class="title is-2">Method</h2>
         <div class="content has-text-justified">
           <h2 class="title is-4">LiDAR-NeRF</h2>
-          <img style="height: auto; width: 100%; object-fit: contain" src="static/images/lidar-nerf12.png" alt="overview_image">
+          <img style="height: auto; width: 100%; object-fit: contain" src="static/images/lidar-nerf12.jpg" alt="overview_image">
           <p>
             <b>(a) (Top)</b> The physical model of a LiDAR can be described as follow: each laser beam originates from the sensor origin and shoot outwards to a point in the real world or vanishes. One common pattern of laser beams is spinning in a 360-degree fashion. <b>(Bottom)</b> We convert the point clouds into a range image, where each pixel corresponds to a laser beam. Note that we highlight one object in the different views to facilitate the visualization. <b>(b)</b> Taking multi-view LiDAR range im- ages with associated sensor poses as input, our model produces 3D representations of the distance, the intensity, and the ray-drop probability at each pseudo-pixel. We exploit multi-view consistency of the 3D scene to help our network produce accurate geometry. <b> (c)</b> The physical nature of LiDAR models results in point clouds exhibiting recognizable patterns, such as the ground primarily ap- pearing as continuous straight lines. This pattern is also evident in the transformed range images, which display significant structural features, such as their horizontal gradient being almost zero in flat areas. As a result, these structural characteristics are essential for the network to learn.
             </p>
           <h2 class="title is-4">LiDAR-MVL</h2>
-          <img style="height: auto; width: 100%; object-fit: contain" src="static/images/path_dataset3.png" alt="overview_image">
+          <img style="height: auto; width: 100%; object-fit: contain" src="static/images/path_dataset3.jpg" alt="overview_image">
           <p>
             <b>(a)</b> We design two square paths of collection, small and large with 7 and 15 meters in length respectively. <b> (b)</b> Our NeRF-MVL dataset encompasses 9 objects from common traffic categories. We align multiple frames here for better visualization.
             </p>
@@ -217,22 +217,22 @@
         <h2 class="title is-2">Results</h2>
         <div class="content has-text-justified">
           <h2 class="title is-4">KITTI-360</h2>
-          <img style="height: auto; width: 100%; object-fit: contain" src="static/images/kitti_res12.2.png" alt="overview_image">
+          <img style="height: auto; width: 100%; object-fit: contain" src="static/images/kitti_res12.2.jpg" alt="overview_image">
           <p>
             Our LiDAR-NeRF produces more realistic LiDAR patterns with highly detailed structure and geometry.
           </p>
           <h2 class="title is-4">LiDAR-MVL</h2>
-          <img style="height: auto; width: 100%; object-fit: contain" src="static/images/self_data_res8.png" alt="overview_image">
+          <img style="height: auto; width: 100%; object-fit: contain" src="static/images/self_data_res8.jpg" alt="overview_image">
           <p>
             LiDAR-NeRF can effectively encode 3D information and multiple attributes, enabling it to accurately model the behavior of beams as they penetrate car glass and reach seats. Moreover, the high quality of the results obtained from different viewpoints serves as compelling evidence of our method’s effectiveness
           </p>
           <h2 class="title is-4">Ablations</h2>
-          <img style="height: auto; width: 100%; object-fit: contain" src="static/images/reg5.png" alt="overview_image">
+          <img style="height: auto; width: 100%; object-fit: contain" src="static/images/reg5.jpg" alt="overview_image">
           <p>
             The iNGP’s hybrid 3D grid archi- tecture achieves more detailed structures. Our structural regularization significantly improves the geometry estimation and produces more realistic LiDAR patterns.
           </p>
           <h2 class="title is-4">Edit</h2>
-          <img style="height: auto; width: 100%; object-fit: contain" src="static/images/edit_paste11.png" alt="overview_image">
+          <img style="height: auto; width: 100%; object-fit: contain" src="static/images/edit_paste11.jpg" alt="overview_image">
           <p>
             The augmented scene from our LiDAR-NeRF has realistic occlusion effects and consistent LiDAR pattern thanks to our pseudo range-image formalism, compared with the common cope-paste strategy.
           </p>
